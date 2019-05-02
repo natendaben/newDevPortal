@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+This is a portal for my projects and work made in Creative Web Dev Tools at the University of Colorado Boulder.
+
+# TEAM
+
+    Nate Bennett
+
+# THANKS
+
+   	David Schaal
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

@@ -1,0 +1,91 @@
+body{
+	background-color: $bgColor;
+	display: grid;
+	grid-template-columns: 10% auto 10%;
+	grid-template-rows: auto auto auto;
+}
+
+header{
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	@include flexy;
+	img{
+		max-width: 100%;
+	}
+}
+
+main{
+	border-radius: 10px;
+	border: 2px solid $hlColor;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 1fr;
+	@include break(900px)
+	{
+		grid-template-columns: 1fr;
+	}
+	a{
+		// border: 2px solid $boxColor;
+		border-radius: 10px;
+		margin: 2%;
+		color: $hlColor;
+		@include flexy;
+		padding: 5%;
+		text-decoration: none;
+
+		&:visited{
+			color: $hlColor;
+		}
+		&:hover{
+			background-color: $hovColor;
+			transition: .7s;
+		}
+		
+		img{
+			max-width: 90%;
+		}
+
+		h2{
+			margin: 2% 0% 3% 0%;
+			font-family: $headFont;
+			font-size: 200%;
+			@include break(900px)
+			{
+				font-size: 150%;
+			}
+		}
+
+		p{
+			max-width: 100%;
+			font-family: $mainFont;
+			text-align: center;
+			@include break(900px)
+			{
+				font-size: 80%;
+			}
+		}
+	}
+}
+
+footer{
+	margin: 3%;
+	@include flexy;
+	color: $hlColor;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	font-family: $mainFont;
+	text-align: center;
+	@include break(900px)
+	{
+		font-size: 80%;
+	}
+}
+
