@@ -54,6 +54,7 @@ main a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: center;
   padding: 5%;
   text-decoration: none;
 }
@@ -61,15 +62,18 @@ main a:visited {
   color: white;
 }
 main a:hover {
-  background-color: #00b7ff;
+  background-color: #17fcfd;
+  color: black;
   transition: .7s;
 }
 main a img {
   max-width: 90%;
 }
 main a h2 {
-  margin: 2% 0% 3% 0%;
-  font-family: "Playfair Display", serif;
+  margin: 3% 0% 3% 0%;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
   font-size: 200%;
 }
 @media (max-width: 900px) {
@@ -79,7 +83,8 @@ main a h2 {
 }
 main a p {
   max-width: 100%;
-  font-family: "Rubik", sans-serif;
+  font-family: "PT Serif", serif;
+  line-height: 1.3em;
   text-align: center;
 }
 @media (max-width: 900px) {
@@ -98,7 +103,7 @@ footer {
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
-  font-family: "Rubik", sans-serif;
+  font-family: "PT Serif", serif;
   text-align: center;
 }
 @media (max-width: 900px) {

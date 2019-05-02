@@ -49,6 +49,7 @@ main{
 		margin: 2%;
 		color: $hlColor;
 		@include flexy;
+		align-items: center;
 		padding: 5%;
 		text-decoration: none;
 
@@ -57,16 +58,20 @@ main{
 		}
 		&:hover{
 			background-color: $hovColor;
+			color: black;
 			transition: .7s;
 		}
 		
 		img{
+
 			max-width: 90%;
 		}
 
 		h2{
-			margin: 2% 0% 3% 0%;
+			margin: 3% 0% 3% 0%;
 			font-family: $headFont;
+			font-style: italic;
+			font-weight: 600;
 			font-size: 200%;
 			@include break(900px)
 			{
@@ -77,6 +82,7 @@ main{
 		p{
 			max-width: 100%;
 			font-family: $mainFont;
+			line-height: 1.3em;
 			text-align: center;
 			@include break(900px)
 			{
