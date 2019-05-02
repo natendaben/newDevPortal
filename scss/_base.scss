@@ -16,16 +16,29 @@ header{
 	}
 }
 
-main{
+.containerOne{
 	border-radius: 10px;
-	border: 2px solid $hlColor;
+	border: 4px solid #fe6dfe;
+	padding: .3%;
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row-start: 2;
 	grid-row-end: 3;
+}
+.containerTwo{
+	border-radius: 10px;
+	border: 4px solid $hlColor;
+	padding: .3%;
+
+}
+
+main{
+	border-radius: 10px;
+	border: 4px solid #17fcfd;
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-template-columns: 1fr 1fr;
+	padding: 1%;
 	@include break(900px)
 	{
 		grid-template-columns: 1fr;
